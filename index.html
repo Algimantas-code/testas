@@ -1,21 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=s, initial-scale=1.0" />
-    <title>Document-water</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document-password generator</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h3>Password Generator</h3>
     <form action="">
-      <input type="text" id="city-input" placeholder="Enter city" />
-      <button type="submit">Submit</button>
-      <div id="city-name"></div>
-      <div id="weather-icon"></div>
-      <div id="date"></div>
-      <div id="temp"></div>
-      <div id="humidity"></div>
-      <div id="wind"></div>
+      <div class="container">
+        <div class="psw">
+          <label for="psw">Password Lenght:</label>
+          <input type="number" id="lenght" name="length" required />
+        </div>
+        <div class="length">
+          <label for="myCheck">Include Uppecase Letters:</label>
+          <input type="checkbox" id="myCheck" name="myCheck" />
+        </div>
+        <div class="length">
+          <label for="myCheck">Include Numbers:</label>
+          <input type="checkbox" id="myCheck1" name="myCheck1" />
+        </div>
+        <div class="length">
+          <label for="myCheck">Include Symbols:</label>
+          <input type="checkbox" id="myCheck2" name="myCheck2" />
+        </div>
+        <input type="submit" value="Generate Password" />
+        <div class="lenght">
+          <input type="text" id="ats" name="ats" value="" />
+          <!-- <button>Copy</button> -->
+          <input type="button" value="Copy" />
+        </div>
+      </div>
+      <h3></h3>
     </form>
     <script src="./app.js"></script>
   </body>
